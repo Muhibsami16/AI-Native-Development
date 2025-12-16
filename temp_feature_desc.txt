@@ -1,0 +1,26 @@
+Module 1: The Robotic Nervous System (ROS 2)
+
+Target audience:
+- AI / CS students learning Physical AI & Humanoid Robotics
+
+Focus:
+- ROS 2 as middleware for humanoid control
+- Python-to-ROS integration
+- Humanoid robot modeling
+
+Chapters (Docusaurus MDX):
+
+Chapter 1: ROS 2 Fundamentals
+- Purpose of ROS 2 in Physical AI
+- Nodes and execution model
+- Communication overview
+
+Chapter 2: ROS 2 Communication with Python
+- rclpy nodes
+- Topics and services
+- Connecting Python AI agents to controllers
+
+Chapter 3: Humanoid Modeling with URDF
+- URDF structure
+- Links and joints
+- Integration with ROS 2 and simulation
