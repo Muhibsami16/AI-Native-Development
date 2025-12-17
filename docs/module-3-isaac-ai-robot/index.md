@@ -1,4 +1,4 @@
-# Isaac AI Robot Brain (NVIDIA Isaac)
+# Module 3: Isaac AI Robot Brain (NVIDIA Isaac)
 
 Welcome to Module 3: The AI-Robot Brain, focusing on NVIDIA Isaac ecosystem integration with ROS 2. This module covers advanced perception, training, and navigation for humanoid robots.
 
