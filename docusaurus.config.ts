@@ -81,25 +81,26 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        {to: '/docs/intro', label: 'Intro', position: 'left'},
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'module1Sidebar',
           position: 'left',
           label: 'Module 1',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'docsSidebar',
+          sidebarId: 'module2Sidebar',
           position: 'left',
           label: 'Module 2',
         },
         {
-          type: 'doc',
-          docId: 'module-3-isaac-ai-robot/index',
+          type: 'docSidebar',
+          sidebarId: 'module3Sidebar',
           position: 'left',
           label: 'Module 3',
         },
-        {to: '/docs/intro', label: 'Intro', position: 'left'},
+        
         {
           href: 'https://github.com/your-username/ros2-humanoid-education',
           label: 'GitHub',

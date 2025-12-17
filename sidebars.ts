@@ -14,26 +14,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebars: SidebarsConfig = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
-  tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Module 1: The Robotic Nervous System (ROS 2)',
-      items: [
-        'module-1/index',
-        'module-1/chapter-1',
-        'module-1/chapter-2',
-        'module-1/chapter-3'
-      ],
-    },
-  ],
-
-  // Manual sidebar for educational content
-  docsSidebar: [
-    {
-      type: 'category',
-      label: 'Intro',
-      items: ['intro'],
-    },
+  module1Sidebar: [
     {
       type: 'category',
       label: 'Module 1: The Robotic Nervous System (ROS 2)',
@@ -50,6 +31,9 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+  ],
+
+  module2Sidebar: [
     {
       type: 'category',
       label: 'Module 2: The Digital Twin (Gazebo & Unity)',
@@ -66,6 +50,9 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+  ],
+
+  module3Sidebar: [
     {
       type: 'category',
       label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac)',
@@ -81,6 +68,15 @@ const sidebars: SidebarsConfig = {
           ],
         },
       ],
+    },
+  ],
+
+  // General sidebar for intro and other content
+  docsSidebar: [
+    {
+      type: 'category',
+      label: 'Intro',
+      items: ['intro'],
     },
   ],
 };
