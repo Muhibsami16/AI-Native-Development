@@ -66,6 +66,22 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac)',
+      items: [
+        'module-3-isaac-ai-robot/index',
+        {
+          type: 'category',
+          label: 'Chapters',
+          items: [
+            'module-3-isaac-ai-robot/chapter-1-isaac-sim-fundamentals',
+            'module-3-isaac-ai-robot/chapter-2-isaac-ros-perception',
+            'module-3-isaac-ai-robot/chapter-3-nav2-navigation'
+          ],
+        },
+      ],
+    },
   ],
 };
 

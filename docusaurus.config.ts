@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'ROS2 Humanoid Education',
+  title: 'Physical AI & Humanoid Robotics Textbook',
   tagline: 'Learning ROS 2 for Physical AI & Humanoid Robotics',
   favicon: 'img/favicon.ico',
 
@@ -75,7 +75,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'ROS2 Humanoid Education',
+      title: 'Home',
       logo: {
         alt: 'ROS2 Humanoid Education Logo',
         src: 'img/logo.svg',
@@ -92,6 +92,12 @@ const config: Config = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Module 2',
+        },
+        {
+          type: 'doc',
+          docId: 'module-3-isaac-ai-robot/index',
+          position: 'left',
+          label: 'Module 3',
         },
         {to: '/docs/intro', label: 'Intro', position: 'left'},
         {
@@ -114,6 +120,10 @@ const config: Config = {
             {
               label: 'Module 2: Digital Twin (Gazebo & Unity)',
               to: '/docs/module-2',
+            },
+            {
+              label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac)',
+              to: '/docs/module-3-isaac-ai-robot',
             },
           ],
         },

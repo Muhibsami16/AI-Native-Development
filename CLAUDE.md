@@ -206,5 +206,15 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 - `history/adr/` — Architecture Decision Records
 - `.specify/` — SpecKit Plus templates and scripts
 
+## Active Technologies
+
+- Markdown, Docusaurus v3.x, Node.js 18+ (003-isaac-ai-robot)
+- NVIDIA Isaac Sim, Isaac ROS, Nav2 (003-isaac-ai-robot)
+
+## Recent Changes
+
+- 003-isaac-ai-robot: Added Markdown + Docusaurus v3.x, Node.js 18+
+- 003-isaac-ai-robot: Added NVIDIA Isaac Sim, Isaac ROS, Nav2
+
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
