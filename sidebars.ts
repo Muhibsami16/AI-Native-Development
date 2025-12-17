@@ -31,7 +31,7 @@ const sidebars: SidebarsConfig = {
   docsSidebar: [
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Intro',
       items: ['intro'],
     },
     {
