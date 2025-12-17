@@ -1,57 +1,66 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  imageUrl: string;
   description: ReactNode;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Module 1: The Robotic Nervous System (ROS 2)',
+    imageUrl: 'https://xpert.digital/wp-content/uploads/2025/06/virtuelles-gehirn-robotik-Xpert.Digital-png.png', // Yahan apni image ka URL paste karen
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn the fundamentals of ROS 2 for Physical AI & Humanoid Robotics. Master the robotic nervous system with comprehensive tutorials on ROS 2 concepts, communication patterns, and node management.
       </>
     ),
+    link: '/docs/module-1',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Module 2: The Digital Twin (Gazebo & Unity)',
+    imageUrl: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/8145/production/_125339033_gettyimages-109685978.jpg.webp', // Yahan apni image ka URL paste karen
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Explore digital twin technologies for robotics simulation. Learn to create realistic virtual environments using Gazebo and Unity for testing and training humanoid robots.
       </>
     ),
+    link: '/docs/module-2',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Module 3: The AI-Robot Brain (NVIDIA Isaac)',
+    imageUrl: 'https://img.pikbest.com/illustration/20250721/ai-robot-with-glowing-brain-humanoid-interacting-artificial-intelligence_11799465.jpg!w700wp', // Yahan apni image ka URL paste karen
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Dive into NVIDIA Isaac ecosystem for advanced perception and navigation. Master Isaac Sim, Isaac ROS perception, and Nav2 for humanoid navigation in this cutting-edge AI robotics module.
       </>
     ),
+    link: '/docs/module-3-isaac-ai-robot',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, imageUrl, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+      <Link to={link} className={styles.featureLink}>
+        <div className="text--center">
+          <img
+            src={imageUrl}
+            alt={title}
+            className={styles.featureSvg}
+            role="img"
+          />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3">{title}</Heading>
+          <p>{description}</p>
+        </div>
+      </Link>
     </div>
   );
 }

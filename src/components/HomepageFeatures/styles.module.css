@@ -9,3 +9,21 @@
   height: 200px;
   width: 200px;
 }
+
+.featureLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.featureLink:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-primary);
+  background-color: rgba(0, 0, 0, 0.02);
+}
